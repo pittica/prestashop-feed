@@ -1,0 +1,22 @@
+imports:
+  - { resource: ../common.yml }
+
+services:
+  pittica.prestashop.module.feed.db:
+    class: Db
+    public: true
+    factory: [ 'Db', 'getInstance' ]
+
+  pittica.prestashop.modules.feed.form.data_configuration:
+    class: 'Pittica\PrestaShop\Module\Feed\Form\DataConfiguration'
+    arguments:
+      - "@prestashop.adapter.legacy.configuration"
+
+  pittica.prestashop.module.feed.installer:
+    class: Pittica\PrestaShop\Module\Feed\Install\Installer
+    public: true
+    arguments:
+      - '@pitticafeed'
+      - '@prestashop.adapter.legacy.configuration'
+      - '%database_prefix%'
+      - '@doctrine.orm.entity_manager'

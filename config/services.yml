@@ -1,0 +1,11 @@
+imports:
+  - { resource: ./common.yml }
+  - { resource: ./form/*.yml }
+  - { resource: ./repository.yml }
+  - { resource: ./command.yml }
+  - { resource: ./tools.yml }
+  - { resource: ./providers.yml }
+
+services:
+  _defaults:
+    public: true

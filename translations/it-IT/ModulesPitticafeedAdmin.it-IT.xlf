@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="retrobottega" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="a80425472d94ae02c836da5b6f205b7b">
+        <source>Feed</source>
+        <target>Feed</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ce5eb2a3973e054c78cb4a51b05d1f7e">
+        <source>Feed generator and exporter.</source>
+        <target>Generatore ed esportatore di feed.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9461bed8b71377318436990e57106729">
+        <source>Offers</source>
+        <target>Offerte</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0734421eb2760fb7207036aec7271b93">
+        <source>Rebuild documents</source>
+        <target>Ricostruisci documenti</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1b40c9b53b773efb851fc44f581ae606">
+        <source>Update failed.</source>
+        <target>Aggiornamento fallito.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="69f93485f9bf954e2dfbd29ca1b10fbb">
+        <source>Feeds documents have been updated.</source>
+        <target>I documenti del feed sono stati aggiornati.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f4f70727dc34561dfde1a3c529b6205c">
+        <source>Settings</source>
+        <target>Impostazioni</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2097b7fb5c095b416a8cbc52c1e5c1b0">
+        <source>Update Feeds</source>
+        <target>Aggiorna Feed</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f7c80edabe1d2fd194093395699df3db">
+        <source>Check Products</source>
+        <target>Controlla Prodotti</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ee932d70bce47690b8dd5d9b38ef5c1d">
+        <source>Documents updated.</source>
+        <target>Documenti aggiornati.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="58d9d9bc9e91bf1ff501204f7e1b8596">
+        <source>Documents update failed.</source>
+        <target>Aggiornamento documenti fallito.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8b36e9207c24c76e6719268e49201d94">
+        <source>Google</source>
+        <target>Google</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ff5579ca7568463e48ebd2003fa1429d">
+        <source>Update Feed</source>
+        <target>Aggiorna Feed</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="68b04a2933154cdccc0443f8188a51f1">
+        <source>Google updated.</source>
+        <target>Google aggiornato.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="db7ba79014bfde8cabd99c4d6576ac1e">
+        <source>Google update failed.</source>
+        <target>Aggiornamento Google fallito.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ca0fe5f26d2e2b139a1dd408a0722e8c">
+        <source>Shopalike</source>
+        <target>Shopalike</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="aaa5c7eb4544e7c9fecde64927ba02ef">
+        <source>Shopalike updated.</source>
+        <target>Shopalike aggiornato.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2442a21ca31e8cb84c380f813404f333">
+        <source>Shopalike update failed.</source>
+        <target>Aggiornamento Shopalike fallito.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ec2dea077564d3b9e95c613fc53e5ec4">
+        <source>TrovaPrezzi</source>
+        <target>TrovaPrezzi</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5e243a84c69efc2273526b6ecb8d48c9">
+        <source>Skip empty quantities</source>
+        <target>Salta quantità vuote</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6ccca3a49787b684eef09293441641c1">
+        <source>Only active products</source>
+        <target>Solo prodotti attivi</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5d19de84efe7d9984a9cb414145fbeab">
+        <source>Saves memory on generation actions.</source>
+        <target>Risparmia memoria nelle azioni di generazione.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="914419aa32f04011357d3b604a86d7eb">
+        <source>Carrier</source>
+        <target>Corriere</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4d3d769b812b6faa6b76e1a8abaece2d">
+        <source>Active</source>
+        <target>Attivo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cb5feb1b7314637725a2e73bdc9f7295">
+        <source>Color</source>
+        <target>Colore</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6f6cb72d544962fa333e2e34ce64f719">
+        <source>Size</source>
+        <target>Taglia</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="019ec3132cdf8ee0f2e2a75cf5d3e459">
+        <source>Gender</source>
+        <target>Genere</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d92a8333dd3ccb895cc65f7455b71206">
+        <source>Material</source>
+        <target>Materiale</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9d8d2d5ab12b515182a505f54db7f538">
+        <source>Age</source>
+        <target>Età</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="750214084cd99e24fa59717a9d54337a">
+        <source>Energy Consumption</source>
+        <target>Classe Energetica</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bc6d30e0591d064ebcb1bef01e77242a">
+        <source>Heel Height</source>
+        <target>Altezza Tacco</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="37d00f4554dc3c0baeb34a9c22d787d9">
+        <source>Shop URL</source>
+        <target>URL del Negozio</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e402ec34e89d29901c255ac3f9c9787f">
+        <source>TrustedProgram Key</source>
+        <target>Chiave TrustedProgram</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987">
+        <source>Name</source>
+        <target>Nome</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ca0dbad92a874b2f69b549293387925e">
+        <source>Code</source>
+        <target>Codice</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="be53a0541a6d36f6ecb879fa2c584b08">
+        <source>Image</source>
+        <target>Immagine</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="af1b98adf7f686b84cd0b443e022b7a0">
+        <source>Categories</source>
+        <target>Categorie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9f82518d468b9fee614fcc92f76bb163">
+        <source>Shop</source>
+        <target>Negozio</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="801ab24683a4a8c433c6eb40c48bcd9d">
+        <source>Download</source>
+        <target>Download</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="32f416df1d840bd40d51cd0ac659280c">
+        <source>Download URL</source>
+        <target>URL di Download</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="91af5705f16502125e8b2187e64202c0">
+        <source>CLI</source>
+        <target>CLI</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="92a8f0b9d28a89b480bd1d29f46f0484">
+        <source>Generator</source>
+        <target>Generatore</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="254f642527b45bc260048e30704edb39">
+        <source>Configuration</source>
+        <target>Configurazione</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="30872f3ff3d29e5b7d23537f491348de">
+        <source>Google Merchant</source>
+        <target>Google Merchant</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

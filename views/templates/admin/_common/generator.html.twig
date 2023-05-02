@@ -1,0 +1,30 @@
+{#**
+  * PrestaShop Module - pitticafeed
+  *
+  * Copyright 2022 Pittica S.r.l.
+  *
+  * @category  Module
+  * @package   Pittica\PrestaShop\Module\Feed
+  * @author    Lucio Benini <info@pittica.com>
+  * @copyright 2022 Pittica S.r.l.
+  * @license   http://opensource.org/licenses/LGPL-3.0  The GNU Lesser General Public License, version 3.0 ( LGPL-3.0 )
+  * @link      https://github.com/pittica/prestashop-feed
+  *#}
+
+<div class="col">
+  <div class="card">
+    <h3 class="card-header">
+      <i class="material-icons">open_in_new</i>
+      {{ 'Generator'|trans({}, 'Modules.Pitticafeed.Admin') }}
+    </h3>
+    <div class="card-body">
+      <div class="card-block">
+        <div class="card-text">
+          <a href="{{ generatorUrl }}" title="{{ 'Download URL'|trans({}, 'Modules.Pitticafeed.Admin') }}" target="_new">
+            {{ generatorUrl }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

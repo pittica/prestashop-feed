@@ -1,0 +1,7 @@
+services:
+  pitticafeed:
+    class: 'PitticaFeed'
+    public: true
+    factory: ['Module', 'getInstanceByName']
+    arguments:
+      - 'pitticafeed'

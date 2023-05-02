@@ -1,0 +1,22 @@
+services:
+  pittica.prestashop.module.feed.providers:
+    class: Pittica\PrestaShop\Module\Feed\Provider\Provider
+    public: false
+    arguments:
+      - "@service_container"
+      - "@prestashop.adapter.legacy.configuration"
+
+  pittica.prestashop.module.feed.providers.google:
+    class: Pittica\PrestaShop\Module\Feed\Provider\GoogleProvider
+    parent: pittica.prestashop.module.feed.providers
+    public: true
+
+  pittica.prestashop.module.feed.providers.trovaprezzi:
+    class: Pittica\PrestaShop\Module\Feed\Provider\TrovaprezziProvider
+    parent: pittica.prestashop.module.feed.providers
+    public: true
+
+  pittica.prestashop.module.feed.providers.shopalike:
+    class: Pittica\PrestaShop\Module\Feed\Provider\ShopalikeProvider
+    parent: pittica.prestashop.module.feed.providers
+    public: true

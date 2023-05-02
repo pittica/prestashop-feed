@@ -1,0 +1,8 @@
+imports:
+  - { resource: ../tools.yml }
+  - { resource: ../repository.yml }
+  - { resource: ../providers.yml }
+
+services:
+  _defaults:
+    public: true

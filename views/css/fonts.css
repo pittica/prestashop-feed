@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "pitticafeed";
+  src: url("../fonts/pitticafeed.eot?zdekqw");
+  src: url("../fonts/pitticafeed.eot?zdekqw#iefix") format("embedded-opentype"),
+    url("../fonts/pitticafeed.ttf?zdekqw") format("truetype"),
+    url("../fonts/pitticafeed.woff?zdekqw") format("woff"),
+    url("../fonts/pitticafeed.svg?zdekqw#pitticafeed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.pitticafeed-icon {
+  font-family: "pitticafeed" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.icon-settings:before {
+  content: "\e900";
+}
+.icon-trovaprezzi:before {
+  content: "\e901";
+}
+.icon-google-merchant:before {
+  content: "\e902";
+}
+.icon-shopalike:before {
+  content: "\e903";
+}

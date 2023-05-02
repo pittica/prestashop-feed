@@ -1,0 +1,7 @@
+services:
+  pittica.prestashop.module.feed.repository.offer:
+    class: Pittica\PrestaShop\Module\Feed\Repository\PitticaFeedOfferRepository
+    factory: ["@doctrine.orm.default_entity_manager", getRepository]
+    public: true
+    arguments:
+      - Pittica\PrestaShop\Module\Feed\Entity\PitticaFeedOffer

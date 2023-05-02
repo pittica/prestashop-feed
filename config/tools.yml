@@ -1,0 +1,35 @@
+services:
+  pittica.prestashop.module.feed.tools:
+    class: Pittica\PrestaShop\Module\Feed\Tool\Tool
+    public: false
+    arguments:
+      - "@service_container"
+      - "@prestashop.adapter.legacy.configuration"
+
+  pittica.prestashop.module.feed.tools.updater:
+    class: Pittica\PrestaShop\Module\Feed\Tool\Updater
+    parent: pittica.prestashop.module.feed.tools
+    public: true
+    arguments:
+      - "@doctrine.orm.entity_manager"
+      - '%database_prefix%'
+
+  pittica.prestashop.module.feed.tools.locator:
+    class: Pittica\PrestaShop\Module\Feed\Tool\Locator
+    parent: pittica.prestashop.module.feed.tools
+    public: true
+
+  pittica.prestashop.module.feed.tools.generator:
+    class: Pittica\PrestaShop\Module\Feed\Tool\Generator
+    parent: pittica.prestashop.module.feed.tools
+    public: true
+
+  pittica.prestashop.module.feed.tools.image:
+    class: Pittica\PrestaShop\Module\Feed\Tool\Image
+    parent: pittica.prestashop.module.feed.tools
+    public: true
+
+  pittica.prestashop.module.feed.tools.price:
+    class: Pittica\PrestaShop\Module\Feed\Tool\Price
+    parent: pittica.prestashop.module.feed.tools
+    public: true

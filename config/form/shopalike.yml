@@ -1,0 +1,25 @@
+services:
+  pittica.prestashop.modules.feed.form.shopalike.data_provider:
+    class: 'Pittica\PrestaShop\Module\Feed\Form\DataProvider'
+    arguments:
+      - "@pittica.prestashop.modules.feed.form.shopalike.data_configuration"
+
+  pittica.prestashop.modules.feed.form.shopalike.data_configuration:
+    class: 'Pittica\PrestaShop\Module\Feed\Form\ShopalikeDataConfiguration'
+    parent: pittica.prestashop.modules.feed.form.data_configuration
+
+  pittica.prestashop.modules.feed.form.shopalike.data_handler:
+    class: 'PrestaShop\PrestaShop\Core\Form\Handler'
+    arguments:
+      - "@form.factory"
+      - "@prestashop.core.hook.dispatcher"
+      - "@pittica.prestashop.modules.feed.form.shopalike.data_provider"
+      - 'Pittica\PrestaShop\Module\Feed\Form\Type\ShopalikeType'
+      - "shopalike"
+
+  pittica.prestashop.modules.feed.form.type.shopalike:
+    class: 'Pittica\PrestaShop\Module\Feed\Form\Type\ShopalikeType'
+    parent: "form.type.translatable.aware"
+    public: true
+    tags:
+      - { name: form.type }

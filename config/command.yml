@@ -1,0 +1,7 @@
+services:
+  Pittica\PrestaShop\Module\Feed\Command\UpdateCommand:
+    class: Pittica\PrestaShop\Module\Feed\Command\UpdateCommand
+    tags:
+      - { name: "console.command" }
+    arguments:
+      - "@service_container"

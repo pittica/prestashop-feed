@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="retrobottega" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="f824535bf1d47bc498b8aceb01cc7045">
+        <source>Forbidden call</source>
+        <target>Chiamata proibita</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f92965e2c8a7afb3c1b9a5c09a263636">
+        <source>Done</source>
+        <target>Fatto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="902b0d55fddef6f8d651fe1035b7d4bd">
+        <source>Error</source>
+        <target>Errore</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="aa85f0c2d34046bf02c7eeb7029df165">
+        <source>Seen on TrovaPrezzi</source>
+        <target>Presente su TrovaPrezzi</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

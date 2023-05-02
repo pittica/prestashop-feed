@@ -1,0 +1,33 @@
+{
+  "name": "pittica/prestashop-feed",
+  "authors": [
+    {
+      "name": "Lucio Benini",
+      "email": "lucio.benini@pittica.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pittica\\PrestaShop\\Module\\Feed\\": "src/"
+    },
+    "config": {
+      "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  },
+  "archive": {
+    "name": "pitticafeed",
+    "exclude": [
+      "*",
+      ".*",
+      "!pitticafeed/"
+    ]
+  },
+  "scripts": {
+    "build": [
+      "php ./build.php",
+      "composer archive --format=zip --file pitticafeed",
+      "php ./build.php clear"
+    ]
+  }
+}

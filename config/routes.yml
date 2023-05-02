@@ -1,0 +1,112 @@
+pittica.prestashop.module.feed.configure.general:
+  path: /pitticafeed/configure
+  methods: [GET, POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\ConfigureController::index'
+
+pittica.prestashop.module.feed.configure.general.update:
+  path: /pitticafeed/configure/update
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\ConfigureController::update'
+
+pittica.prestashop.module.feed.check:
+  path: /pitticafeed/check/{offset}/{limit}/{orderBy}/{sortOrder}
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::index'
+    limit: last
+    offset: 0
+    orderBy: last
+    sortOrder: last
+  requirements:
+    limit: _limit|last|\d+
+    orderBy: last|id_product|name|active|has_code|has_image|has_categories|shop
+    offset: last|\d+
+    sortOrder: last|asc|desc
+
+pittica.prestashop.module.feed.check.search:
+  path: /pitticafeed/check
+  methods: [POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::search'
+    gridDefinitionFactoryServiceId: pittica.prestashop.modules.feed.definition.factory.offer
+    redirectRoute: pittica.prestashop.module.feed.check
+
+pittica.prestashop.module.feed.check.toggle:
+  path: /pitticafeed/check/toggle
+  methods: [POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::toggle'
+
+pittica.prestashop.module.feed.check.delete:
+  path: /pitticafeed/check/selection/delete
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::delete'
+
+pittica.prestashop.module.feed.check.enable_selection:
+  path: /pitticafeed/check/selection/bulk_enable
+  methods: [POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::enableSelection'
+
+pittica.prestashop.module.feed.check.disable_selection:
+  path: /pitticafeed/check/selection/bulk_disable
+  methods: [POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::disableSelection'
+
+pittica.prestashop.module.feed.check.delete_selection:
+  path: /pitticafeed/check/selection/bulk_delete
+  methods: [POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::deleteSelection'
+
+pittica.prestashop.module.feed.check.update:
+  path: /pitticafeed/check/update
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::update'
+
+pittica.prestashop.module.feed.check.rebuild:
+  path: /pitticafeed/check/rebuild
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\CheckController::rebuild'
+
+pittica.prestashop.module.feed.configure.trovaprezzi:
+  path: /pitticafeed/configure/trovaprezzi
+  methods: [GET, POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\TrovaprezziController::index'
+
+pittica.prestashop.module.feed.configure.trovaprezzi.update:
+  path: /pitticafeed/configure/trovaprezzi/update
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\TrovaprezziController::update'
+
+pittica.prestashop.module.feed.configure.google:
+  path: /pitticafeed/configure/google
+  methods: [GET, POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\GoogleController::index'
+
+pittica.prestashop.module.feed.configure.google.update:
+  path: /pitticafeed/configure/google/update
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\GoogleController::update'
+
+pittica.prestashop.module.feed.configure.shopalike:
+  path: /pitticafeed/configure/shopalike
+  methods: [GET, POST]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\ShopalikeController::index'
+
+pittica.prestashop.module.feed.configure.shopalike.update:
+  path: /pitticafeed/configure/shopalike/update
+  methods: [GET]
+  defaults:
+    _controller: 'Pittica\PrestaShop\Module\Feed\Controller\ShopalikeController::update'

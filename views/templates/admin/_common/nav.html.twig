@@ -1,0 +1,46 @@
+{#**
+  * PrestaShop Module - pitticafeed
+  *
+  * Copyright 2022 Pittica S.r.l.
+  *
+  * @category  Module
+  * @package   Pittica\PrestaShop\Module\Feed
+  * @author    Lucio Benini <info@pittica.com>
+  * @copyright 2022 Pittica S.r.l.
+  * @license   http://opensource.org/licenses/LGPL-3.0  The GNU Lesser General Public License, version 3.0 ( LGPL-3.0 )
+  * @link      https://github.com/pittica/prestashop-feed
+  *#}
+
+{% set navHeaderItems = [
+  {
+    'path': 'pittica.prestashop.module.feed.configure.general',
+    'icon': 'settings',
+    'label': 'Configuration'|trans({}, 'Modules.Pitticafeed.Admin'),
+  },
+  {
+    'path': 'pittica.prestashop.module.feed.configure.trovaprezzi',
+    'icon': 'trovaprezzi',
+    'label': 'TrovaPrezzi'|trans({}, 'Modules.Pitticafeed.Admin'),
+  },
+  {
+    'path': 'pittica.prestashop.module.feed.configure.google',
+    'icon': 'google-merchant',
+    'label': 'Google Merchant'|trans({}, 'Modules.Pitticafeed.Admin'),
+  },
+  {
+    'path': 'pittica.prestashop.module.feed.configure.shopalike',
+    'icon': 'shopalike',
+    'label': 'Shopalike'|trans({}, 'Modules.Pitticafeed.Admin'),
+  },
+]
+%}
+<ul class="nav nav-pills">
+  {% for item in navHeaderItems %}
+  <li class="nav-item">
+    <a href="{{ path(item.path) }}" class="nav-link tab{% if item.path is same as(current) %} active{% endif %}">
+      <i class="pitticafeed-icon icon-{{ item.icon|escape }}"></i>
+      {{ item.label|escape }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
