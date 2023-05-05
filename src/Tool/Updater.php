@@ -291,6 +291,7 @@ class Updater extends Tool
             ->setParameter('lang', (int) $this->getConfiguration()->get('PS_LANG_DEFAULT', null, $constraint))
             ->setParameter('root', (int) $this->getConfiguration()->get('PS_ROOT_CATEGORY', null, $constraint))
             ->setParameter('home', (int) $this->getConfiguration()->get('PS_HOME_CATEGORY', null, $constraint))
+            ->setParameter('excluded', $this->getConfiguration()->get('PITTICA_FEED_EXCLUDED_CATEGORIES', null, $constraint))
             ->innerJoin(
                 'p',
                 $this->_dbPrefix . 'product_shop',
@@ -307,7 +308,7 @@ class Updater extends Tool
                 'p',
                 $this->_dbPrefix . 'category_lang',
                 'cd',
-                '(cd.id_category = p.id_category_default OR cd.id_category = ps.id_category_default) AND cd.id_lang = :lang AND cd.id_category != :root AND cd.id_category != :home'
+                '(cd.id_category = p.id_category_default OR cd.id_category = ps.id_category_default) AND cd.id_lang = :lang AND cd.id_category != :root AND cd.id_category != :home AND cd.id_category NOT IN(:excluded)'
             )
             ->leftJoin(
                 'cp',

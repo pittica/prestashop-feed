@@ -105,6 +105,7 @@ class Installer
         return [
             'PITTICA_FEED_CARRIER'                     => !empty($carriers[0]['id_reference']) ? (int) $carriers[0]['id_reference'] : -1,
             'PITTICA_FEED_SKIP_EMPTY'                  => true,
+            'PITTICA_FEED_EXCLUDED_CATEGORIES'         => '',
             'PITTICA_FEED_ONLY_ACTIVE'                 => true,
             'PITTICA_FEED_GOOGLE_ACTIVE'               => false,
             'PITTICA_FEED_TROVAPREZZI_ACTIVE'          => false,

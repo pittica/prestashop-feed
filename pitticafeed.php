@@ -136,6 +136,7 @@ class PitticaFeed extends Module
         
             if (preg_match('/^\/modules\/' . $this->name . '\/configure/', $this->get('router.request_context')->getPathInfo())) {
                 $this->context->controller->addCSS($this->getPathUri() . 'views/css/fonts.css');
+                $this->context->controller->addJS($this->getPathUri() . 'views/js/configure.js');
             }
         }
     }

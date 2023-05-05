@@ -17,12 +17,13 @@ declare(strict_types=1);
 
 namespace Pittica\PrestaShop\Module\Feed\Form\Type;
 
-use PrestaShop\PrestaShop\Adapter\Carrier\CarrierDataProvider;
 use PrestaShopBundle\Form\Admin\Type\SwitchType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Translation\TranslatorInterface;
 use PrestaShopBundle\Form\Admin\Type\TranslatorAwareType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use PrestaShopBundle\Form\Admin\Type\CategoryChoiceTreeType;
+use PrestaShop\PrestaShop\Adapter\Carrier\CarrierDataProvider;
 
 /**
  * Configure type.
@@ -75,7 +76,7 @@ class ConfigureType extends TranslatorAwareType
      * @return void
      * @since  1.0.0
      */
-    public function buildForm(FormBuilderInterface $builder, array $options) : void
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
             ->add(
@@ -94,8 +95,17 @@ class ConfigureType extends TranslatorAwareType
                     'required' => false,
                     'help'     => $this->trans('Saves memory on generation actions.', 'Modules.Pitticafeed.Admin'),
                 ]
+            )
+            ->add(
+                'excluded_categories',
+                CategoryChoiceTreeType::class,
+                [
+                    'label'    => $this->trans('Excluded categories', 'Modules.Pitticafeed.Admin'),
+                    'required' => false,
+                    'multiple' => true,
+                ]
             );
-        
+
         if ($this->_isSingleShop) {
             $builder
                 ->add(

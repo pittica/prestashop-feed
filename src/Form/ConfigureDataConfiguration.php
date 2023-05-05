@@ -35,12 +35,15 @@ class ConfigureDataConfiguration extends DataConfiguration
      * @return array
      * @since  1.0.0
      */
-    public function getConfiguration() : array
+    public function getConfiguration(): array
     {
+        $excluded = $this->get('PITTICA_FEED_EXCLUDED_CATEGORIES');
+
         return [
-            'skip_empty'  => $this->get('PITTICA_FEED_SKIP_EMPTY'),
-            'only_active' => $this->get('PITTICA_FEED_ONLY_ACTIVE'),
-            'carrier'     => $this->get('PITTICA_FEED_CARRIER'),
+            'skip_empty'          => $this->get('PITTICA_FEED_SKIP_EMPTY'),
+            'only_active'         => $this->get('PITTICA_FEED_ONLY_ACTIVE'),
+            'excluded_categories' => $excluded ? explode(',', $excluded) : [],
+            'carrier'             => $this->get('PITTICA_FEED_CARRIER'),
         ];
     }
 
@@ -52,11 +55,12 @@ class ConfigureDataConfiguration extends DataConfiguration
      * @return array Errors.
      * @since  1.0.0
      */
-    public function updateConfiguration(array $configuration) : array
+    public function updateConfiguration(array $configuration): array
     {
         $this
             ->set('PITTICA_FEED_SKIP_EMPTY', $configuration['skip_empty'])
             ->set('PITTICA_FEED_ONLY_ACTIVE', $configuration['only_active'])
+            ->set('PITTICA_FEED_EXCLUDED_CATEGORIES', $configuration['excluded_categories'] ? implode(',', $configuration['excluded_categories']) : '')
             ->set('PITTICA_FEED_CARRIER', $configuration['carrier']);
 
         return [];

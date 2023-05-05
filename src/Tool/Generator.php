@@ -77,8 +77,8 @@ class Generator extends Tool
         $carrier       = null;
 
         if ($shopId) {
-            $constraint    = ShopConstraint::shop($shopId);
-            $carrier       = Carrier::getCarrierByReference((int) $configuration->get('PITTICA_FEED_CARRIER', null, null, $constraint));
+            $constraint = ShopConstraint::shop($shopId);
+            $carrier    = Carrier::getCarrierByReference((int) $configuration->get('PITTICA_FEED_CARRIER', null, null, $constraint));
         } else {
             $carrier = Carrier::getCarrierByReference((int) $configuration->get('PITTICA_FEED_CARRIER'));
         }
